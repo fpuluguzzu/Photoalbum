@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+}
+
+body {
+    background: #353a41;
+    width: 100%;
+    height: 70%;
+}
+
+nav {
+    background: #171c24;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 100px;
+}
+
+nav .logo {
+    color: #daba1d;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-family: ClimateCrisis;
+}
+
+nav .nav-items {
+    display: flex;
+    flex: 1;
+    padding: 0 0 0 40px;
+}
+
+nav .nav-items li {
+    list-style: none;
+    padding: 0 15px;
+}
+
+nav .nav-items li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: Oswald;
+}
+
+nav .nav-items li a:hover {
+    color: #ff3d00;
+}
+
+nav form {
+    display: flex;
+    height: 40px;
+    padding: 2px;
+    background: #353a41;
+    min-width: 18% !important;
+    border-radius: 2px;
+    border: 1px solid rgba(155, 155, 155, 0.2);
+}
+
+nav form .search-data {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    font-weight: 500;
+    background: none;
+}
+
+nav form button {
+    padding: 0 15px;
+    color: #fff;
+    font-size: 17px;
+    background: #ff3d00;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+nav form button:hover {
+    background: #e63600;
+}
+
+nav .menu-icon,
+nav .search-icon {
+    width: 40px;
+    text-align: center;
+    margin: 0 50px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+nav .menu-icon span,
+nav .search-icon {
+    display: none;
+}
+
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    top: 250px;
+    font-family: ClimateCrisis;
+
+
+}
+
+.carousel-caption h5 {
+    font-size: 50px;
+    margin-top: 25px;
+    margin-left: 20px;
+    color: #daba1d;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 30px;
+    color: #ef5151;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    color: #daba1d;
+    font-style: italic;
+    font-family: 'Arial Narrow Bold';
+}
+
+.container {
+    width: 1000px;
+    min-height: 500px;
+    background: #353a41;
+    margin: 50px 350px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.container .box {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: #ef5151;
+    margin: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+    
+}
+
+.container .box .imgBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.container .box .imgBox img {
+    width: 250px;
+    height: 250px;
+    transition: transform 2s;
+}
+
+.container .box:hover .imgBox img {
+    transform: scale(1.2);
+}
+
+.container .box .details {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #353a41;
+    transform: scaleY(0);
+    transition: transform .5s;
+
+}
+
+.container .box:hover .details {
+    transform: scaleY(1);
+}
+
+.container .box .details .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+
+}
+
+.container .box .details .content h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #ef5151;
+    font-style: italic;
+}
+
+.container .box .details .content p {
+    margin: 10px 0 0;
+    padding: 0;
+    font-style: italic;
+}
+
+.container1{
+    width: 500px;
+    min-height: 500px;
+    background: #353a41;
+    margin: 50px 530px 0;
+    border: 2px solid #ef5151;
+    border-radius: 25px;
+}
+h3{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top:20px ;
+    color: #ef5151;
+    font-style: italic;
+}
+
+label{
+    font-size: 15px;
+    margin-left: 40px;
+    color: #fff; 
+    
+    
+}
+input{
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+#dropdown{
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 8px; 
+    
+}
+#sub {
+    width: 70px;
+    margin-left: 160px;
+    margin-top: 15px; 
+    font-size: 17px;
+    text-transform: capitalize;
+    background-color: #ef5151;
+    color: #fff;
+    border-color: #171c24;
+    padding: 5px;
+    border-radius: 5px;
+}
+.error {
+    color: red;
+   
+    font-size: 15px;
+   margin: 0px;
+  
+   
+}
+
+@media all and ( min-width: 500px) and (max-width:1000px){
+body{
+    
+    padding: auto;
+    margin:auto;
+}
+}
+
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo album</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+            Photography
+        </div>
+
+        <div class="nav-items">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Catalog.html">Catalog</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+        </div>
+
+        <div class="search-icon">
+            <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+        </div>
+
+        <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+    </nav>
+
+    <!--content-->
+
+    <h1>Feedback Form</h1>
+
+    <div class="container1">
+
+        
+            <h3>Send us Your Feedback</h3>
+       
+
+        <br><br>
+
+
+        <form id="feedback">
+
+            <label>Username:</label>
+            <input type="text" id="username" name="username" class="form-control">
+
+            <br><br>
+
+            <br><br><br><label>Image title:</label>
+            <select id="dropdown" class="form-control" name="image">
+                <option value="0" selected="" disabled="">Select</option>
+                <option>img1</option>
+                <option>img2</option>
+                <option>img3</option>
+                <option>img4</option>
+                <option>img5</option>
+                <option>img6</option>
+                <option>img7</option>
+                <option>img8</option>
+                <option>img9</option>
+
+            </select>
+
+            <br><br>
+
+            <br><br><br><label>Comment:</label>
+            <input type="text" id="msg" name="comment" class="form-control">
+
+            <br><br>
+
+            <br><button type="submit" id="sub" class="btn">Submit</button>
+
+        </form>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
